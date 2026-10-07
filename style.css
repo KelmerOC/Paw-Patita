@@ -43,3 +43,109 @@ body {
     margin: 0 auto;
     padding: 30px 0;
 }
+
+/* 3. CABECERA Y NAVEGACIÓN GLOBAL */
+#cabecera {
+    background-color: #FFFFFF;
+    border-bottom: 2px solid var(--color-fondo-alt);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.logo h2 {
+    color: var(--color-primario);
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+#menu ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: var(--color-texto-principal);
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+#menu a:hover {
+    color: var(--color-primario);
+    background-color: var(--color-fondo-alt);
+}
+
+#menu a.active {
+    color: var(--color-primario);
+    background-color: #F8ECE9;
+    border-bottom: 2px solid var(--color-primario);
+}
+
+#select-idioma {
+    border: 1.5px solid var(--color-borde);
+    background-color: #FFFFFF;
+    color: var(--color-texto-principal);
+    padding: 6px 12px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+}
+
+#select-idioma:focus {
+    border-color: var(--color-primario);
+}
+
+/* 4. BOTONES HARMONIOSOS */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 22px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: var(--radio-borde);
+    min-height: 44px;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid transparent;
+}
+
+.btn-negro {
+    background-color: var(--color-primario);
+    color: #FFFFFF;
+}
+
+.btn-negro:hover {
+    background-color: var(--color-primario-hover);
+    box-shadow: 0 4px 12px rgba(139, 58, 43, 0.25);
+}
+
+.btn-borde {
+    background-color: #FFFFFF;
+    color: var(--color-primario);
+    border-color: var(--color-primario);
+}
+
+.btn-borde:hover {
+    background-color: #F8ECE9;
+}
+
+.btn-full {
+    width: 100%;
+}
