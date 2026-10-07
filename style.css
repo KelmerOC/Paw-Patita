@@ -1,0 +1,45 @@
+/* ==========================================================================
+   PAW PATITA CUSCO - HOJA DE ESTILOS CSS (SEMANA 08)
+   ========================================================================== */
+
+/* 1. VARIABLES Y TEMA DE COLOR */
+:root {
+    --color-primario: #8B3A2B;
+    --color-primario-hover: #6F2E22;
+    --color-secundario: #2D5A27;
+    --color-secundario-hover: #22441D;
+    
+    --color-fondo-body: #FAFAFA;
+    --color-fondo-tarjeta: #FFFFFF;
+    --color-fondo-alt: #F2EFE9;
+    
+    --color-texto-principal: #2B2927;
+    --color-texto-secundario: #605C56;
+    --color-borde: #E2DDD5;
+    --color-borde-fuerte: #8B3A2B;
+    
+    --sombra-tarjeta: 0 4px 12px rgba(0, 0, 0, 0.05);
+    --sombra-hover: 0 8px 20px rgba(139, 58, 43, 0.12);
+    --radio-borde: 8px;
+}
+
+/* 2. RESET Y BASES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--color-fondo-body);
+    color: var(--color-texto-principal);
+    line-height: 1.6;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
