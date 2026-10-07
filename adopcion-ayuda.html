@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPatita - Adopcion Ayuda</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="cabecera">
+        <div class="contenedor nav-contenedor">
+            <div class="logo">
+                <h2>Paw Patita Cusco</h2>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="organizaciones.html">Organizaciones y Afiliados</a></li>
+                    <li><a href="adopcion-ayuda.html" class="active" aria-current="page">Adopción y Ayuda</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                </ul>
+            </nav>
+            <div class="idioma-selector">
+                <select id="select-idioma">
+                    <option value="es">ES ▼</option>
+                    <option value="qu">QU ▼</option>
+                    <option value="en">EN ▼</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main class="contenedor">
+        <div class="encabezado-seccion">
+            <h2>Adopción y Ayuda</h2>
+            <span class="leyenda-etica">Sin filtro de raza</span>
+        </div>
+        <aside class="panel-filtros">
+            <div class="filtros-grupo">
+                <button class="btn btn-negro" id="btn-ubicacion">📍 Usar mi ubicación</button>
+                <div class="radios-radio">
+                    <button class="chip active">1 km</button>
+                    <button class="chip">3 km</button>
+                    <button class="chip">5 km</button>
+                    <button class="chip">10 km</button>
+                </div>
+            </div>
+            <div class="filtros-selects">
+                <select id="filtro-edad">
+                    <option value="">Edad: Todas</option>
+                    <option value="cachorro">Cachorro</option>
+                    <option value="joven">Joven</option>
+                    <option value="adulto">Adulto</option>
+                    <option value="senior">Senior</option>
+                </select>
+                <select id="filtro-tamano">
+                    <option value="">Tamaño: Todos</option>
+                    <option value="pequeno">Pequeño</option>
+                    <option value="mediano">Mediano</option>
+                    <option value="grande">Grande</option>
+                </select>
+                <select id="filtro-sexo">
+                    <option value="">Sexo: Todos</option>
+                    <option value="hembra">Hembra</option>
+                    <option value="macho">Macho</option>
+                </select>
+                <select id="filtro-distrito">
+                    <option value="">Distrito: Todos</option>
+                    <option value="wanchaq">Wanchaq</option>
+                    <option value="san_sebastian">San Sebastián</option>
+                    <option value="cusco">Cusco Cercado</option>
+                </select>
+            </div>
+        </aside>
+        <section class="grid-3" id="catalogo">
+            
+            <div class="tarjeta-mascota">
+                <div class="foto-box">foto (relación 4:3)</div>
+                <h3>Canela</h3>
+                <p class="detalles-perro">Joven • Mediano • Hembra</p>
+                <p class="ubicacion-perro">Huellas del Valle • a 1.2 km</p>
+                <span class="badge-estado">Hogar urgente</span>
+                <div class="botones-tarjeta">
+                    <button class="btn btn-borde">Ver detalle</button>
+                    <button class="btn btn-negro" onclick="contactarWhatsApp('Canela')">Quiero adoptar</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-mascota">
+                <div class="foto-box">foto (relación 4:3)</div>
+                <h3>Tuta</h3>
+                <p class="detalles-perro">Cachorro • Pequeño • Hembra</p>
+                <p class="ubicacion-perro">Huellas del Valle • a 1.2 km</p>
+                <span class="badge-estado">Vacunas al día</span>
+                <div class="botones-tarjeta">
+                    <button class="btn btn-borde">Ver detalle</button>
+                    <button class="btn btn-negro" onclick="contactarWhatsApp('Tuta')">Quiero adoptar</button>
+                </div>
+            </div>
+
+            <div class="tarjeta-mascota">
+                <div class="foto-box">foto (relación 4:3)</div>
+                <h3>Wayra</h3>
+                <p class="detalles-perro">Senior • Grande • Macho</p>
+                <p class="ubicacion-perro">Huellas del Valle • a 1.2 km</p>
+                <span class="badge-estado">Busca compañía</span>
+                <div class="botones-tarjeta">
+                    <button class="btn btn-borde">Ver detalle</button>
+                    <button class="btn btn-negro" onclick="contactarWhatsApp('Wayra')">Quiero adoptar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="bot-flotante" onclick="abrirBot()">
+        <span>Bot 🐾</span>
+    </div>
+
+    <footer id="pie">
+        <div class="contenedor">
+            <p>Pie de página - Grupo 2 • © PawPatita elaborado por unos patitas</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

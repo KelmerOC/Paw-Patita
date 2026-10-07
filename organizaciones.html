@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPatita Cusco-Organizaciones y Afiliados</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="cabecera">
+        <div class="contenedor nav-contenedor">
+            <div class="logo">
+                <h2>Paw Patita Cusco</h2>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="organizaciones.html" class="active" aria-current="page">Organizaciones y Afiliados</a></li>
+                    <li><a href="adopcion-ayuda.html">Adopción y Ayuda</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                </ul>
+            </nav>
+            <div class="idioma-selector">
+                <select id="select-idioma">
+                    <option value="es">ES ▼</option>
+                    <option value="qu">QU ▼</option>
+                    <option value="en">EN ▼</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main class="contenedor">
+        <h2>Organizaciones y Afiliados</h2>
+        <p class="subtitulo">Elige cómo quieres explorar la red de protección animal de Cusco.</p>
+        <div class="grid-2 seccion-opciones">
+            <div class="tarjeta-opcion">
+                <div class="circle-placeholder"></div>
+                <h3>Ver Afiliados</h3>
+                <p>Rescatistas independientes, voluntarios y familias de acogida. Perfil simple con sus publicaciones.</p>
+                <button class="btn btn-negro btn-full" onclick="alert('Redirigiendo a la lista de Afiliados locales...')">Ver Afiliados →</button>
+            </div>
+
+            <div class="tarjeta-opcion">
+                <div class="circle-placeholder"></div>
+                <h3>Ver Organizaciones</h3>
+                <p>Albergues y asociaciones con perfil institucional, sede en el mapa y campañas activas.</p>
+                <button class="btn btn-negro btn-full" onclick="alert('Redirigiendo a la lista de Organizaciones verificadas...')">Ver Organizaciones →</button>
+            </div>
+        </div>
+    </main>
+    <div id="bot-flotante" onclick="abrirBot()">
+        <span>Bot 🐾</span>
+    </div>
+
+    <footer id="pie">
+        <div class="contenedor">
+            <p>Pie de página - Grupo 2 • © PawPatita elaborado por unos patitas</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
