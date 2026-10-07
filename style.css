@@ -268,3 +268,133 @@ body {
     border: 2px solid var(--color-secundario);
     margin-bottom: 18px;
 }
+
+/* 7. ADOPCIÓN Y AYUDA (DIRECTORIO/CATÁLOGO) */
+.encabezado-seccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.leyenda-etica {
+    background-color: #E8F5E9;
+    color: var(--color-secundario);
+    border: 1px solid #C8E6C9;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.panel-filtros {
+    background-color: var(--color-fondo-alt);
+    border-radius: var(--radio-borde);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.filtros-grupo {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.radios-radio {
+    display: flex;
+    gap: 8px;
+}
+
+.radios-radio .chip {
+    padding: 6px 14px;
+    border: 1px solid var(--color-borde);
+    background: #FFFFFF;
+    color: var(--color-texto-principal);
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.radios-radio .chip.active, .radios-radio .chip:hover {
+    background: var(--color-secundario);
+    color: #FFFFFF;
+    border-color: var(--color-secundario);
+}
+
+.filtros-selects {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.filtros-selects select {
+    padding: 8px 14px;
+    border: 1px solid var(--color-borde);
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    color: var(--color-texto-principal);
+    outline: none;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.tarjeta-mascota {
+    background-color: var(--color-fondo-tarjeta);
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio-borde);
+    padding: 18px;
+    box-shadow: var(--sombra-tarjeta);
+    transition: transform 0.2s ease;
+}
+
+.tarjeta-mascota:hover {
+    transform: translateY(-3px);
+}
+
+.foto-box {
+    width: 100%;
+    height: 190px;
+    background-color: var(--color-fondo-alt);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    color: var(--color-texto-secundario);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.tarjeta-mascota h3 {
+    font-size: 1.3rem;
+    color: var(--color-texto-principal);
+}
+
+.detalles-perro {
+    color: var(--color-texto-secundario);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.ubicacion-perro {
+    font-size: 0.85rem;
+    color: var(--color-texto-secundario);
+    margin-top: 2px;
+}
+
+.botones-tarjeta {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.botones-tarjeta .btn {
+    flex: 1;
+}
